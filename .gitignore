@@ -1,0 +1,6 @@
+
+/dist
+/node_modules
+/src/bot_analisis
+/src/extracted_data
+.env

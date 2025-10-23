@@ -1,0 +1,24 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/app.ts --bundle --outfile=dist/app.js --format=cjs --platform=node --target=es2021 --minify --external:playwright-core --external:chromium-bidi --external:./loader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "@types/aws-lambda": "^8.10.156",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11"
+  }
+}
